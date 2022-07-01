@@ -1,12 +1,13 @@
 import { useState } from 'react'
+import Menu from '../Components/Menu';
 import Newslatter from "../Components/Newslatter";
 
-const [count, setCount] = useState(0)
-
 export default function HomePage ( ) {
+    const [count, setCount] = useState(0)
     return(
-        <div className="">
-        <Newslatter />
+        <div>
+            <Menu />
+            <Newslatter />
         </div>
     )
 }
