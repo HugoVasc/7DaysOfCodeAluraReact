@@ -1,13 +1,13 @@
 import { useState } from 'react'
 import Menu from '../Components/Menu';
-import Newslatter from "../Components/Newslatter";
+import Newslatter from "../Components/Newslatter/Newslatter";
 
 export default function HomePage ( ) {
     const [count, setCount] = useState(0)
     return(
-        <div>
+        <main>
             <Menu />
             <Newslatter />
-        </div>
+        </main>
     )
 }
